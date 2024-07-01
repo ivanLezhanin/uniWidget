@@ -1,0 +1,14 @@
+<svg width="99.000000" height="118.000000" viewBox="0 0 99 118" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip314_1185">
+			<rect id="фрейм 179" rx="15.000000" width="740.000000" height="632.000000" fill="white"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip314_1185)">
+		<path id="polygon" d="M139.797 -73.6172L-100.422 249.875L-224 108.375L128.965 -86L139.797 -73.6172Z" fill-rule="evenodd" fill="#00BDC5"/>
+		<path id="polygon" d="M819.797 453.383L579.578 776.875L456 635.375L808.965 441L819.797 453.383Z" fill-rule="evenodd" fill="#EBECEC"/>
+	</g>
+</svg>

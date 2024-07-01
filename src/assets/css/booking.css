@@ -1,0 +1,909 @@
+.AboutObjectWrapper .HideOnPC {
+    display: none !important;
+}
+.ComfortNewStyle {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.ObjectList > .Object > .ObjectRightBlock > .ORBSelect {
+    position: relative;
+    cursor: pointer;
+    display: block;
+    padding: 7px 43px;
+    width: fit-content;
+    height: fit-content;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0;
+    text-align: left;
+    border-radius: 6px;
+    background: rgb(0, 189, 197);
+}
+.ObjectList > .Object > .ObjectRightBlock > .ORBPrice {
+    position: relative;
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat', serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0;
+    text-align: left;
+}
+.ObjectList > .Object > .ObjectRightBlock {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 8px;
+    flex-shrink: 0;
+}
+.ObjectList > .Object:nth-child(1) {
+    padding-top: 0;
+}
+.ObjectList > .Object:nth-last-child(1) {
+    padding-bottom: 0;
+}
+.ObjectList > .Object:not(:nth-child(1)) {
+    border-top: 1px solid rgb(0, 189, 197);
+}
+.ObjectList > .Object > .ObjectTitle {
+    position: relative;
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat', serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0;
+    text-align: left;
+    word-break: break-word;
+    word-wrap: break-word;
+    flex-shrink: 1;
+}
+.ObjectList > .Object {
+    position: relative;
+    width: auto;
+    padding: 28px 0;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 45px;
+}
+.ObjectList {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: fit-content;
+    padding: 28px 0;
+}
+.ChooseObject > * {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.ChooseObject > span:not(.ChangeButton) {
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat', serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-align: left;
+}
+.ChooseObject > span.ChangeButton {
+    position: relative;
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 7px 38px;
+    font-family: 'Montserrat', serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0;
+    text-align: left;
+    color: white;
+    background-color: rgb(0, 189, 197);
+    border-radius: 6px;
+}
+.ChooseObject {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 8px 18px;
+    margin-bottom: 8px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.BubbleIcon {
+    position: relative;
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+.CalcDropdown {
+    position: absolute;
+    width: max-content;
+    height: fit-content;
+    z-index: 100;
+    left: calc(-50% + 16px);
+    top: calc(100% - 10px);
+    filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.25));
+}
+.AboutObjectWrapper {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+}
+.AboutObject {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /*margin: 0 auto 128px auto;*/
+    width: 1136px;
+}
+.AboutObject > * {
+    display: flex !important;
+}
+.Header {
+    position: relative;
+    width: fit-content;
+    margin-bottom: 32px;
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat', serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 0;
+    text-align: left;
+    flex-shrink: 0;
+}
+.Block {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+}
+.Block1 {
+    display: flex;
+    flex-direction: column;
+}
+.B1Content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.B1Content > .Column {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.B1Content > .ColumnLeft {
+    width: 58%;
+}
+.B1Content > .ColumnRight {
+    width: 40%;
+}
+.B1Content > .ColumnLeft > .ContainMainImage {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+    overflow: hidden;
+}
+.B1Content > .ColumnLeft > .ContainMainImage > .MainImage {
+    position: relative;
+    display: block;
+    aspect-ratio: 1 / 0.725;
+    margin-bottom: 0;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+.B1Content > .ColumnLeft > .ContainMainImage > .MainImageMask {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 23px;
+    right: -5px;
+    background-size: 238px auto;
+    background: url('..ct/MainImageMask.svg') no-repeat 100% 100%;
+    z-index: 15;
+    /* filter: drop-shadow(0px 0px 4px #000000);
+     */
+}
+.B1Content > .ColumnRight > .PriceBlock {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: auto;
+    height: fit-content;
+    margin-bottom: 16px;
+    padding: 26px;
+    background: linear-gradient( 0deg, rgba(0, 43, 112, 1) 6.05%, rgba(0, 190, 199, 1) 100% );
+    border-radius: 20px;
+}
+.B1Content > .ColumnRight > .PriceBlock > .PriceBlockHead {
+    position: relative;
+    padding: 10px;
+    margin-bottom: 15px;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0;
+    text-align: left;
+}
+.B1Content > .ColumnRight > .PriceBlock > .ReserveButton {
+    margin-top: 8px;
+    width: 100%;
+    height: fit-content;
+}
+.B1Content > .ColumnRight > .PriceBlock > .ReserveButton > span {
+    position: relative;
+    margin: 21px auto;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0;
+    text-align: left;
+}
+.B1Content > .ColumnRight > .PriceBlock > .TextUnderButton {
+    position: relative;
+    display: flex;
+    margin-top: 24px;
+    width: 100%;
+    height: fit-content;
+}
+.B1Content > .ColumnRight > .PriceBlock > .TextUnderButton > span {
+    position: relative;
+    margin: 10px auto;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-align: center;
+}
+.AdditonalService {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 16px;
+}
+.AdditonalService > * {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.AdditonalService > div {
+    position: relative;
+    margin-right: 8px;
+}
+.AdditonalService > span {
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0;
+}
+.B1Content > .ColumnRight > .PriceBlock > .PriceBlockFooter {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+    margin-top: 32px;
+}
+.B1Content > .ColumnRight > .PriceBlock > .PriceBlockFooter > .PriceFormula {
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+.B1Content > .ColumnRight > .PriceBlock > .PriceBlockFooter > .PriceResult {
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+.B1Content > .ColumnRight > .PriceBlock > .PriceForm {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    border: 2px solid rgb(0, 190, 199);
+    border-radius: 10px;
+    background-color: #fff;
+}
+.B1Content > .ColumnRight > .PriceBlock > .PriceForm > .FormLine {
+    position: relative;
+    width: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.B1Content > .ColumnRight > .PriceBlock > .PriceForm > .FormLine:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid rgb(0, 189, 197);
+}
+.B1Content > .ColumnRight > .PriceBlock > .PriceForm > .FormLine:nth-child(1) > .Column {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+.B1Content > .ColumnRight > .PriceBlock > .PriceForm > .FormLine:nth-child(1) > .Column:nth-child(1) {
+    border-right: 2px solid rgb(0, 189, 197);
+    padding-right: 16px;
+}
+.B1Content > .ColumnRight > .PriceBlock > .PriceForm > .FormLine:nth-child(2) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.B1Content > .ColumnRight > .PriceBlock > .PriceForm > .FormLine:nth-child(2) > .HeadTitle {
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat', serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-align: left;
+}
+.B1Content > .ColumnRight > .PriceBlock > .PriceForm > .FormLine:nth-child(2) > .Line {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.B1Content > .ColumnRight > .PriceBlock > .PriceForm > .FormLine:nth-child(2) > .Line > * {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.B1Content > .ColumnRight > .PriceBlock > .PriceForm > .FormLine:nth-child(2) > .Line > .PeopleCounter {
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat', serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-align: left;
+}
+.B1Content > .ColumnRight > .PriceBlock > .PriceForm > .FormLine:nth-child(2) > .Line > .CalcButtons {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.B1Content > .ColumnRight > .PriceBlock > .PriceForm > .FormLine:nth-child(2) > .Line > .CalcButtons > .Button, .PlusButton {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    border: 2px solid rgb(9, 206, 215);
+    border-radius: 100%;
+}
+.B1Content > .ColumnRight > .PriceBlock > .PriceForm > .FormLine:nth-child(2) > .Line > .CalcButtons > .Button.BMinus::after {
+    position: absolute;
+    content: '-';
+    width: 100%;
+    height: 100%;
+    color: rgb(9, 206, 215);
+    font-family: 'Muller', serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0;
+    text-align: center;
+}
+.B1Content > .ColumnRight > .PriceBlock > .PriceForm > .FormLine:nth-child(2) > .Line > .CalcButtons > .Button.BPlus::after, .PlusButton::after {
+    position: absolute;
+    content: '+';
+    width: 100%;
+    height: 100%;
+    color: rgb(9, 206, 215);
+    font-family: 'Muller', serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0;
+    text-align: center;
+}
+.B1Content > .ColumnRight > .PriceBlock > .PriceForm > .FormLine:nth-child(1) > .Column {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.B1Content > .ColumnRight > .PriceBlock > .PriceForm > .FormLine:nth-child(1) > .Column > .CHeader {
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat', serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-align: left;
+    margin-bottom: 4px;
+}
+.B1Content > .ColumnRight > .PriceBlock > .PriceForm > .FormLine:nth-child(1) > .Column > .CLine {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.B1Content > .ColumnRight > .PriceBlock > .PriceForm > .FormLine:nth-child(1) > .Column > .CLine > * {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.B1Content > .ColumnRight > .PriceBlock > .PriceForm > .FormLine:nth-child(1) > .Column > .CLine > span {
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat', serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-align: left;
+}
+.B1Content > .ColumnRight > .PriceBlock > .PriceForm > .FormLine:nth-child(1) > .Column:nth-child(2) {
+    padding-left: 16px;
+}
+.PlaceOnMap {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 32px;
+}
+.PlaceOnMap > * {
+    margin-bottom: auto;
+    margin-top: auto;
+}
+.PlaceOnMap > img {
+    height: fit-content;
+    margin-right: 4px;
+}
+.PlaceOnMap > span {
+    color: rgb(0, 189, 197);
+    font-family: 'Montserrat', serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-align: left;
+    text-decoration-line: underline;
+}
+.Comfort {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.Comfort > span {
+    position: relative;
+    margin-bottom: 16px;
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat', serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-align: left;
+}
+.Comfort > .CList {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 95%;
+    height: fit-content;
+    margin-bottom: 16px;
+}
+.Comfort > .CList > .CPlus {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    padding: 12px 16px;
+    border: 2px solid rgb(196, 196, 196);
+    border-radius: 10px;
+}
+.Comfort > .CList > .CPlus > * {
+    margin-bottom: auto;
+    margin-top: auto;
+}
+.Comfort > .CList > .CPlus > img {
+    position: relative;
+    height: fit-content;
+    margin-right: 8px;
+}
+.Comfort > .CList > .CPlus > span {
+    position: relative;
+    height: fit-content;
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat', serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-align: left;
+}
+.ShowAllPlusses {
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 32px;
+    width: fit-content;
+    height: fit-content;
+    padding: 21px 50px;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-align: left;
+    background: rgb(0, 189, 197);
+    border-radius: 10px;
+}
+.AboutObjectDesc {
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat', serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-align: left;
+    width: 100%;
+}
+.MainImage {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 0.55;
+    border-radius: 20px;
+}
+.TwoImages {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 /0.55;
+    gap: 20px;
+}
+.TwoImages > * {
+    width: calc(50% - 10px);
+    height: auto;
+    aspect-ratio: 0.78 / 1;
+    border-radius: 20px;
+}
+.AboutObjectWrapper .HeaderContainer > *:nth-child(1) {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.AboutObjectWrapper .HeaderContainer > *:nth-child(2) {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.AboutObjectWrapper .HeaderContainer {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 8px;
+}
+.AboutObjectWrapper .HeaderContainer.Mobile {
+    display: none;
+}
+@media (max-width: 480px) {
+    .AboutObjectWrapper .ComfortNewStyle {
+        display: none !important;
+    }
+    .AboutObjectWrapper .HideOnPC {
+        display: flex !important;
+    }
+    .AboutObjectWrapper .ShowAllPlusses.HideOnPC {
+        display: block !important;
+    }
+    .AboutObjectWrapper .HeaderContainer:not(.Mobile) {
+        display: none !important;
+    }
+    .AboutObjectWrapper .HeaderContainer.Mobile {
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .AboutObjectWrapper .HeaderContainer.Mobile > .PlaceOnMap {
+        margin-left: 15px;
+    }
+    .Comfort > span {
+        margin-bottom: 10px;
+    }
+    .HeaderContainer.Mobile .Header {
+        margin-bottom: 10px;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 32px;
+    }
+    .CalcDropdown {
+        position: initial;
+        width: 100%;
+        z-index: 100;
+        left: calc(-50% + 16px);
+        top: calc(100% - 10px);
+        filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.25));
+    }
+    .B1Content > .ColumnRight > .PriceBlock {
+        padding: 12px;
+        margin-bottom: 0;
+    }
+    .ObjectList > .Object > .ObjectRightBlock {
+        width: 100%;
+    }
+    .ObjectList > .Object > .ObjectRightBlock > .ORBSelect {
+        width: 100%;
+        text-align: center;
+    }
+    .ObjectList > .Object {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 45px;
+    }
+    .AboutObject {
+        width: 100%;
+        padding: 0 10px;
+        margin-bottom: 84px;
+    }
+    .Block.B1Content {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .B1Content > .ColumnLeft, .B1Content > .ColumnRight {
+        width: auto;
+    }
+    .B1Content > .ColumnRight {
+        margin-top: 34px;
+    }
+    .B1Content > .ColumnRight > .PriceBlock > .PriceForm {
+        border: 0 solid transparent !important;
+        background-color: transparent;
+        gap: 10px;
+    }
+    .B1Content > .ColumnRight > .PriceBlock > .PriceForm > .FormLine:nth-child(1) {
+        flex-direction: column;
+        padding: 0;
+        border: 0 solid transparent !important;
+        gap: 10px;
+    }
+    .B1Content > .ColumnRight > .PriceBlock > .PriceForm > .FormLine:nth-child(1) > .Column {
+        width: 100%;
+        border: 0 solid transparent !important;
+        padding: 16px;
+        background-color: white;
+        border-radius: 10px;
+    }
+    .B1Content > .ColumnRight > .PriceBlock > .PriceForm > .FormLine:nth-child(2) {
+        margin-top: 10px;
+        background-color: white;
+        border-radius: 10px;
+    }
+    .B1Content > .ColumnRight > .PriceBlock > .TextUnderButton > span {
+        text-align: left;
+        margin-left: 0;
+    }
+    .B1Content > .ColumnRight > .PriceBlock > .PriceBlockFooter {
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        height: fit-content;
+        margin-top: 40px;
+        order: 3;
+    }
+    .B1Content > .ColumnRight > .PriceBlock > .ReserveButton {
+        order: 4;
+        margin-top: 16px;
+        min-width: 0;
+        width: 100%;
+    }
+    .B1Content > .ColumnRight > .PriceBlock > .TextUnderButton {
+        order: 5;
+        margin-top: 12px;
+    }
+    .Comfort {
+        margin-top: 30px;
+        order: 3;
+    }
+    .ShowAllPlusses {
+        order: 4;
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 0;
+    }
+    .AboutObjectDesc {
+        order: 2;
+    }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+    .AboutObjectWrapper .ComfortNewStyle {
+        display: none !important;
+    }
+    .AboutObjectWrapper .HideOnPC {
+        display: flex !important;
+    }
+    .AboutObjectWrapper .ShowAllPlusses.HideOnPC {
+        display: block !important;
+    }
+    .AboutObjectWrapper .HeaderContainer:not(.Mobile) {
+        display: none !important;
+    }
+    .AboutObjectWrapper .HeaderContainer.Mobile {
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .AboutObjectWrapper .HeaderContainer.Mobile > .PlaceOnMap {
+        margin-left: 15px;
+    }
+    .Comfort > span {
+        margin-bottom: 10px;
+    }
+    .HeaderContainer.Mobile .Header {
+        margin-bottom: 10px;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 32px;
+    }
+    .CalcDropdown {
+        position: initial;
+        width: 100%;
+        z-index: 100;
+        left: calc(-50% + 16px);
+        top: calc(100% - 10px);
+        filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.25));
+    }
+    .B1Content > .ColumnRight > .PriceBlock {
+        padding: 12px;
+        margin-bottom: 0;
+    }
+    .ObjectList > .Object > .ObjectRightBlock {
+        width: 100%;
+    }
+    .ObjectList > .Object > .ObjectRightBlock > .ORBSelect {
+        width: 100%;
+        text-align: center;
+    }
+    .ObjectList > .Object {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 45px;
+    }
+    .AboutObject {
+        width: 100%;
+        padding: 0 10px;
+        margin-bottom: 84px;
+    }
+    .Block.B1Content {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .B1Content > .ColumnLeft, .B1Content > .ColumnRight {
+        width: auto;
+    }
+    .B1Content > .ColumnRight {
+        margin-top: 34px;
+    }
+    .B1Content > .ColumnRight > .PriceBlock > .PriceForm {
+        border: 0 solid transparent !important;
+        background-color: transparent;
+        gap: 10px;
+    }
+    .B1Content > .ColumnRight > .PriceBlock > .PriceForm > .FormLine:nth-child(1) {
+        flex-direction: column;
+        padding: 0;
+        border: 0 solid transparent !important;
+        gap: 10px;
+    }
+    .B1Content > .ColumnRight > .PriceBlock > .PriceForm > .FormLine:nth-child(1) > .Column {
+        width: 100%;
+        border: 0 solid transparent !important;
+        padding: 16px;
+        background-color: white;
+        border-radius: 10px;
+    }
+    .B1Content > .ColumnRight > .PriceBlock > .PriceForm > .FormLine:nth-child(2) {
+        margin-top: 10px;
+        background-color: white;
+        border-radius: 10px;
+    }
+    .B1Content > .ColumnRight > .PriceBlock > .TextUnderButton > span {
+        text-align: left;
+        margin-left: 0;
+    }
+    .B1Content > .ColumnRight > .PriceBlock > .PriceBlockFooter {
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        height: fit-content;
+        margin-top: 40px;
+        order: 3;
+    }
+    .B1Content > .ColumnRight > .PriceBlock > .ReserveButton {
+        order: 4;
+        margin-top: 16px;
+        min-width: 0;
+        width: 100%;
+    }
+    .B1Content > .ColumnRight > .PriceBlock > .TextUnderButton {
+        order: 5;
+        margin-top: 12px;
+    }
+    .Comfort {
+        margin-top: 30px;
+        order: 3;
+    }
+    .ShowAllPlusses {
+        order: 4;
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 0;
+    }
+    .AboutObjectDesc {
+        order: 2;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+}
+@media (min-width: 992px) and (max-width: 1400px) {
+}
+@media (min-width: 1400px) and (max-width: 1600px) {
+}
+@media (min-width: 1600px) {
+}

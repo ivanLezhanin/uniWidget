@@ -1,0 +1,14 @@
+<svg width="14.000000" height="16.000000" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip362_1923">
+			<rect id="человек" width="14.000000" height="16.000000" fill="white"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip362_1923)">
+		<path id="path" d="M0 15.2031L0 15.5391C0 15.75 0.261108 16.0078 0.471313 16.0078L13.5308 16.0078C13.741 16.0078 14.0021 15.75 14.0021 15.5391C14.0021 13.3281 11.8516 8.96875 9.52539 9.02344C8.7666 9.00781 8.55737 9.50781 7.0011 9.53906C5.02539 9.38281 4.92407 8.65625 3.51099 9.4375C1.67004 10.5625 0.338013 12.8672 0 15.2031Z" fill-rule="evenodd" fill="#00BDC5"/>
+		<ellipse id="circle" rx="4.278168" ry="4.246264" transform="matrix(1 0 0 1 7.00281 4.25)" fill="#00BDC5"/>
+	</g>
+</svg>

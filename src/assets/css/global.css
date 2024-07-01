@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('scrollbar-style.css');
+
+body {
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.inputDefaultBlock {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.inputDefaultBlock > .inputDefaultHead {
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.inputRequireField::before {
+  position: relative;
+  width: 20px;
+  height: 20px;
+
+  content: '*';
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+
+  color: rgb(0, 189, 197);
+}
+
+.RequireFieldTip {
+  color: rgb(0, 189, 197);
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.inputDefaultBlock .inputDefaultStyle {
+  position: relative;
+
+  width: 100%;
+  height: fit-content;
+
+  padding: 8px 16px;
+
+  flex-shrink: 1;
+
+  color: rgb(30, 30, 30);
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+
+  border: 1px solid rgb(195, 194, 194);
+
+  border-radius: 8px;
+}
+
+.inputDefaultBlock .inputAreaDefaultStyle {
+  position: relative;
+
+  width: 100%;
+  height: 200px;
+
+  padding: 8px 16px;
+
+  flex-shrink: 1;
+
+  color: rgb(30, 30, 30);
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+
+  border: 1px solid rgb(195, 194, 194);
+
+  border-radius: 8px;
+}
+
+.DefaultColouredText {
+  color: rgb(0, 189, 197);
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.v-dropdown-menu .v-dropdown-menu__container {
+  width: 100%;
+  min-width: 250px;
+  height: fit-content;
+}

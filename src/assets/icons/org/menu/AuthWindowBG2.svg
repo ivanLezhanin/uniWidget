@@ -1,0 +1,22 @@
+<svg width="284.000000" height="181.000000" viewBox="0 0 284 181" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip314_1145">
+			<rect id="фрейм 179" rx="15.000000" width="740.000000" height="632.000000" transform="translate(-456.000000 -451.000000)" fill="white"/>
+		</clipPath>
+		<clipPath id="clip314_1185">
+			<rect id="фрейм 179" rx="15.000000" width="740.000000" height="632.000000" transform="translate(-456.000000 -451.000000)" fill="white"/>
+		</clipPath>
+	</defs>
+	<rect width="284.000000" height="181.000000"/>
+	<g clip-path="url(#clip314_1145)">
+		<path id="polygon" d="M-316.203 -524.617L-556.422 -201.125L-680 -342.625L-327.035 -537L-316.203 -524.617Z" fill-rule="evenodd" fill="#00BDC5"/>
+		<path id="polygon" d="M363.797 2.38281L123.578 325.875L0 184.375L352.965 -10L363.797 2.38281Z" fill-rule="evenodd" fill="#EBECEC"/>
+	</g>
+	<g clip-path="url(#clip314_1185)">
+		<path id="polygon" d="M-316.203 -524.617L-556.422 -201.125L-680 -342.625L-327.035 -537L-316.203 -524.617Z" fill-rule="evenodd" fill="#00BDC5"/>
+		<path id="polygon" d="M363.797 2.38281L123.578 325.875L0 184.375L352.965 -10L363.797 2.38281Z" fill-rule="evenodd" fill="#EBECEC"/>
+	</g>
+</svg>
