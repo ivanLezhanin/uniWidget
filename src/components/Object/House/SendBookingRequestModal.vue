@@ -245,6 +245,7 @@ export default {
 
       UserData: null,
       order_source: 'widget',
+      host_reward: 0.0,
       errorWindowShow: false,
       errorMessageData: {
         title: '',
@@ -354,6 +355,7 @@ export default {
         temp.people_number = this.CalculatorData.ordersList[i].people_count
         temp.amo_obj_id = this.CalculatorData.amo_obj_id
         temp.order_source = this.order_source
+        temp.host_reward = this.CalculatorData.ordersList[i].price
 
         let order_created_resp = await createOrder([temp])
 
