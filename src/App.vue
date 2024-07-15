@@ -28,13 +28,16 @@ export default {
       },
       async created() {
         const getWidget = await getByAppKey(this.$appKey).then((res) => res.data)
-        const TerritoryID = getWidget.territoryId;
-        const mainTerritoryInfo = await getTerritoryMainInfo(TerritoryID).then((res) => res.data)
 
-        this.HeadComponentData = this.createObjectFromParentWithFields(
-            mainTerritoryInfo,
-            this.HeadFieldsArray
-        )
+        if(getWidget.published == 1) {
+          const TerritoryID = getWidget.territoryId;
+          const mainTerritoryInfo = await getTerritoryMainInfo(TerritoryID).then((res) => res.data)
+
+          this.HeadComponentData = this.createObjectFromParentWithFields(
+              mainTerritoryInfo,
+              this.HeadFieldsArray
+          )
+        }
       },
       methods: {
         createObjectFromParentWithFields(parentObj, FieldsFromParentArray) {
