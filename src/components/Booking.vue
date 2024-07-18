@@ -55,7 +55,7 @@
             <div class="PriceForm">
               <div class="FormLine">
                 <div class="Column">
-                  <span class="CHeader">Прибытие</span>
+                  <span class="CHeader">Заезд</span>
                   <div
                       class="DDTriggerButton CLine noselect"
                       @click="toggleDropdown('Menu1', 'CDatepickerSDD')"
