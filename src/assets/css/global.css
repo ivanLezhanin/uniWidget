@@ -8,6 +8,12 @@ body {
   margin: 0;
 }
 
+*,
+::before,
+::after {
+  box-sizing: inherit !important;
+}
+
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
