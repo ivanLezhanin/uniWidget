@@ -23,7 +23,7 @@
   z-index: 1000;
 }
 
-.ModalWrapper > .Modal {
+/*.ModalWrapper > .Modal {
   position: relative;
 
   width: fit-content;
@@ -35,6 +35,15 @@
   z-index: 1010;
 
   border-radius: 15px;
+} */
+
+.ModalWrapper > .Modal {
+  position: relative;
+  width: fit-content;
+  height: 90%;
+  max-width: 90%;
+  margin: 0 auto;
+  z-index: 1010;
 }
 
 </style>

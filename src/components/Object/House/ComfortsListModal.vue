@@ -182,6 +182,7 @@ export default {
   position: relative;
 
   padding: 60px 47px 60px 60px;
+  padding: 60px 47px 60px 60px;
 
   min-width: 680px;
   height: 100%;
