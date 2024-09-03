@@ -129,3 +129,12 @@ body {
   min-width: 250px;
   height: fit-content;
 }
+
+
+#CDatepickerEDD {
+  left: calc(-158% + 16px)!important;
+}
+
+#CDatepickerSDD {
+  left: calc(-58% + 16px)!important;
+}
