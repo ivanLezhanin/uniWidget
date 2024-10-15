@@ -4,12 +4,12 @@
 
 <script>
 import Booking from "./components/Booking.vue";
-import {getTerritoryMainInfo} from "./api/territory.js";
-import {getByAppKey} from "./api/widget.js";
+import { getTerritoryMainInfo } from "./api/territory.js";
+import { getByAppKey } from "./api/widget.js";
 
 export default {
       name: 'App',
-      components: {Booking},
+      components: { Booking },
       data() {
         return {
           HeadComponentData: {},

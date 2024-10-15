@@ -52,100 +52,102 @@
                 </div>
               </template>
             </dropdown-menu>
-            <div class="PriceForm">
+
+            <Preloader v-if="!ordersLoaded" />
+            <div v-else class="PriceForm">
               <div class="FormLine">
-                <div class="Column">
-                  <span class="CHeader">Заезд</span>
-                  <div
-                      class="DDTriggerButton CLine noselect"
-                      @click="toggleDropdown('Menu1', 'CDatepickerSDD')"
-                  >
-                    <span> {{ Calculator.startDateText }}</span>
-                    <img
-                        src="../assets/icons/object/house/DropDownIcon1.svg"
-                        alt=""
-                    />
-                  </div>
-                  <!-- DropdownMenu -->
-                  <div
-                      id="CDatepickerSDD"
-                      class="CalcDropdown"
-                      v-show="DropdownsShow.Menu1 == true"
-                  >
-                    <Composition
-                        :key="`${Calculator.initialDatePickerDate}${Calculator.endDate}${Calculator.initialDatePickerStrictedDate}${getNeededRooms}${OrdersArray}`"
-                        :SelectedDay="getDateFromStartDatepicker"
-                        :StartDay="Calculator.initialDatePickerDate"
-                        :UseRangeDateFixer="true"
-                        :ChangeEndDate="changeEndDate"
-                        :RangeFixerEndDate="Calculator.endDate"
-                        :StrictModeStartDate="
+                  <div class="Column">
+                    <span class="CHeader">Заезд</span>
+                    <div
+                        class="DDTriggerButton CLine noselect"
+                        @click="toggleDropdown('Menu1', 'CDatepickerSDD')"
+                    >
+                      <span> {{ Calculator.startDateText }}</span>
+                      <img
+                          src="../assets/icons/object/house/DropDownIcon1.svg"
+                          alt=""
+                      />
+                    </div>
+                    <!-- DropdownMenu -->
+                    <div
+                        id="CDatepickerSDD"
+                        class="CalcDropdown"
+                        v-show="DropdownsShow.Menu1 == true"
+                    >
+                      <Composition
+                          :key="`${Calculator.initialDatePickerDate}${Calculator.endDate}${Calculator.initialDatePickerStrictedDate}${getNeededRooms}${OrdersArray}`"
+                          :SelectedDay="getDateFromStartDatepicker"
+                          :StartDay="Calculator.initialDatePickerDate"
+                          :UseRangeDateFixer="true"
+                          :ChangeEndDate="changeEndDate"
+                          :RangeFixerEndDate="Calculator.endDate"
+                          :StrictModeStartDate="
                         Calculator.initialDatePickerStrictedDate
                       "
-                        :ViewObject="ObjectSelected"
-                        :IsPrimaryChoosing="true"
-                        :RoomsNeeded="getNeededRooms"
-                        :ordersArray="OrdersArray"
-                    />
+                          :ViewObject="ObjectSelected"
+                          :IsPrimaryChoosing="true"
+                          :RoomsNeeded="getNeededRooms"
+                          :ordersArray="OrdersArray"
+                      />
+                    </div>
                   </div>
-                </div>
-                <div class="Column">
-                  <span class="CHeader">Выезд</span>
-                  <div
-                      class="DDTriggerButton CLine noselect"
-                      @click="toggleDropdown('Menu2', 'CDatepickerEDD')"
-                  >
-                    <span> {{ Calculator.endDateText }}</span>
-                    <img
-                        src="../assets/icons/object/house/DropDownIcon1.svg"
-                        alt=""
-                    />
-                  </div>
-                  <!-- DropdownMenu -->
-                  <div
-                      id="CDatepickerEDD"
-                      class="CalcDropdown"
-                      v-show="DropdownsShow.Menu2 == true"
-                  >
-                    <Composition
-                        :key="`${Calculator.endDate}${Calculator.StrictModeStartDate}${Calculator.endDateText}${getNeededRooms}${OrdersArray}`"
-                        :SelectedDay="getDateFromEndDatepicker"
-                        :StartDay="Calculator.endDate"
-                        :StrictModeStartDate="Calculator.startDate"
-                        :ViewObject="ObjectSelected"
-                        :UseFreeDayFixer="true"
-                        :RoomsNeeded="getNeededRooms"
-                        :getRoomsBlocked="setRoomsBlocked"
-                        :ordersArray="OrdersArray"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="FormLine">
-                <span class="HeadTitle">Количество человек</span>
-                <div class="Line">
-                  <span class="PeopleCounter"> {{ Calculator.peoples }} </span>
-                  <div class="CalcButtons">
+                  <div class="Column">
+                    <span class="CHeader">Выезд</span>
                     <div
-                        class="Button BMinus"
-                        :style="`${
+                        class="DDTriggerButton CLine noselect"
+                        @click="toggleDropdown('Menu2', 'CDatepickerEDD')"
+                    >
+                      <span> {{ Calculator.endDateText }}</span>
+                      <img
+                          src="../assets/icons/object/house/DropDownIcon1.svg"
+                          alt=""
+                      />
+                    </div>
+                    <!-- DropdownMenu -->
+                    <div
+                        id="CDatepickerEDD"
+                        class="CalcDropdown"
+                        v-show="DropdownsShow.Menu2 == true"
+                    >
+                      <Composition
+                          :key="`${Calculator.endDate}${Calculator.StrictModeStartDate}${Calculator.endDateText}${getNeededRooms}${OrdersArray}`"
+                          :SelectedDay="getDateFromEndDatepicker"
+                          :StartDay="Calculator.endDate"
+                          :StrictModeStartDate="Calculator.startDate"
+                          :ViewObject="ObjectSelected"
+                          :UseFreeDayFixer="true"
+                          :RoomsNeeded="getNeededRooms"
+                          :getRoomsBlocked="setRoomsBlocked"
+                          :ordersArray="OrdersArray"
+                      />
+                    </div>
+                  </div>
+                </div>
+              <div class="FormLine">
+                  <span class="HeadTitle">Количество человек</span>
+                  <div class="Line">
+                    <span class="PeopleCounter"> {{ Calculator.peoples }} </span>
+                    <div class="CalcButtons">
+                      <div
+                          class="Button BMinus"
+                          :style="`${
                         Calculator.peoples == 1 ? 'opacity: 0.3;' : ''
                       }`"
-                        @click="PeopleMinus"
-                    ></div>
-                    <div
-                        class="Button BPlus"
-                        :style="`${
+                          @click="PeopleMinus"
+                      ></div>
+                      <div
+                          class="Button BPlus"
+                          :style="`${
                         Calculator.peoples ==
                         ObjectSelected.bed_max * ObjectSelected.equal_objects
                           ? 'opacity: 0.3;'
                           : ''
                       }`"
-                        @click="PeoplePlus"
-                    ></div>
+                          @click="PeoplePlus"
+                      ></div>
+                    </div>
                   </div>
                 </div>
-              </div>
             </div>
 
             <div class="AdditonalService noselect" style="display: none">
@@ -223,6 +225,8 @@ import DefaultButton from "./Buttons/DefaultButton.vue";
 import SendBookingRequestModal from "./Object/House/SendBookingRequestModal.vue";
 import ComfortsListModal from "./Object/House/ComfortsListModal.vue";
 
+import Preloader from "./Preloader.vue";
+
 export default {
   name: 'Booking',
   props: {
@@ -245,10 +249,11 @@ export default {
       }
     },
   },
-  components: {ModalWindow, DropdownMenu, Teleport, Composition, DefaultButton, SendBookingRequestModal, ComfortsListModal},
+  components: {ModalWindow, DropdownMenu, Teleport, Composition, DefaultButton, SendBookingRequestModal, ComfortsListModal, Preloader},
   data() {
     return {
       loading: true,
+      ordersLoaded: false,
       Calculator: {
         initialDatePickerStrictedDate: '',
         initialDatePickerDate: '',
@@ -473,7 +478,9 @@ export default {
 
     async getObjectOrders() {
       let _ord = await getObjectOrdersOptimized(this.ObjectSelected.id)
-      this.OrdersArray = _ord.data
+      this.OrdersArray = _ord.data;
+
+      this.ordersLoaded = true;
     },
 
     PeopleMinus() {

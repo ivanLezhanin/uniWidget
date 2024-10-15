@@ -4,10 +4,10 @@ import axios from 'axios'
 // const API_URL = 'https://students.forus.ru/api/'
 
 //api для dev
-//const API_URL = 'http://localhost:3000/api'
+// const API_URL = 'http://localhost:3000/api'
 
 //api для test
-const API_URL = 'https://new.arenda-uni.ru/api/'
+const API_URL = 'https://arenda-uni.ru/api/'
 
 // create an axios instance
 const service = axios.create({
